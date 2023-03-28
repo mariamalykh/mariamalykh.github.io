@@ -19,9 +19,8 @@ html {
 }
 
 .body {
-    height: 100px;
     background: #FFFFFF;
-    padding-left: 15rem;
+    padding-left: 15%;
     z-index: 1;
 }
 
@@ -343,13 +342,7 @@ about .row_1 .content .container .box .span {
     }
     
     .image {
-    flex: 1 1 40rem;
-    width: 100%;}
-
-    
-    .content {
-        width: 100%;       
-}   
+    width: 100%;}  
     
     .about .row_1 {
     display: flex;
@@ -364,6 +357,10 @@ about .row_1 .content .container .box .span {
     .about .row_1 .content {
     width: 100%;
 }
+    
+    .about .row_1 {
+        
+    }
     
     
 }
