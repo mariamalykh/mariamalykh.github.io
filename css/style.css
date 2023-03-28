@@ -145,7 +145,6 @@ html {
 
 
 .about .row_1 .image {
-    flex: 1 1 25rem; 
 }
 
 .about .row_1 .image .img {
@@ -155,7 +154,6 @@ html {
 }
 
 .about .row_1 .content {
-    flex: 1 1 50rem;
 }
 
 .about .row_1 .content .h3 {
@@ -177,7 +175,6 @@ html {
 }
 
 about .row_1 .content .container .box {
-    flex: 1 1 20rem;
 }
 
 about .row_1 .content .container .box .span {
@@ -190,11 +187,9 @@ about .row_1 .content .container .box .span {
 }
 
 .about .row_2 .skills {
-    flex: 1 1 40rem;
 }
 
 .about .row_2 .container {
-    flex: 1 1 40rem;
 }
 
 .about .row_2 .skills .progress {
@@ -274,7 +269,6 @@ about .row_1 .content .container .box .span {
 }
 
 .contact .row .form {
-    flex: 1 1 55rem;
     background: #fff;
     padding: 0 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
