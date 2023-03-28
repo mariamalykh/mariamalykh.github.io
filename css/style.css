@@ -85,7 +85,6 @@ html {
 }
 
 .image {
-    flex: 1 1 40rem;
     max-width: 40%;
 }
 
@@ -94,7 +93,6 @@ html {
 }
 
 .content {
-    flex: 1 1 40rem;
     max-width: 40%;
 }
 
