@@ -340,10 +340,12 @@ about .row_1 .content .container .box .span {
     }
     
     .image {
-    width: 100%;}  
+    width: 100%;
+    max-width: 100%;}  
     
     .content {
         width: 100%;
+        max-width: 100%;
     }
     
     .about .row_1 {
