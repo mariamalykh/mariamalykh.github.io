@@ -348,7 +348,6 @@ about .row_1 .content .container .box .span {
 
     
     .content {
-    flex: 1 1 40rem;
         width: 100%;       
 }   
     
@@ -359,13 +358,11 @@ about .row_1 .content .container .box .span {
     padding-bottom: 2rem;
 }
     .about .row_1 .image {
-    flex: 1 1 25rem; 
-        width: 100%;
+    width: 100%;
 }
     
     .about .row_1 .content {
-    flex: 1 1 50rem;
-        width: 100%;
+    width: 100%;
 }
     
     
