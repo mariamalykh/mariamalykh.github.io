@@ -356,10 +356,12 @@ about .row_1 .content .container .box .span {
 }
     .about .row_1 .image {
     width: 100%;
+    max-width: 100%;
 }
     
     .about .row_1 .content {
     width: 100%;
+    max-width: 100%;
 }
     
     .about .row_1 {
