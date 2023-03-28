@@ -87,6 +87,7 @@ html {
 
 .image {
     flex: 1 1 40rem;
+    max-width: 40%;
 }
 
 .home .image .img {
@@ -95,6 +96,7 @@ html {
 
 .content {
     flex: 1 1 40rem;
+    max-width: 40%;
 }
 
 
@@ -332,6 +334,21 @@ about .row_1 .content .container .box .span {
     color: blueviolet;
 }
 
+@media (max-width: 320px) {
+    .section {
+        padding: 1rem 5%;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .image {
+    flex: 1 1 40rem; }
+    
+    .content {
+    flex: 1 1 40rem;
+}   
+}
 
 
 
