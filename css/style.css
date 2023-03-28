@@ -373,8 +373,14 @@ about .row_1 .content .container .box .span {
     .body {
         display: flex;
         flex-direction: column;
+        width: 85%;
     }
     
+   .contact .icons_container .block .p {
+    color: #666;
+    font-size: 0.5rem;
+    padding: 0.5rem 0;
+}
     
 }
 
