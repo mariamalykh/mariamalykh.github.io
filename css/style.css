@@ -370,6 +370,11 @@ about .row_1 .content .container .box .span {
         flex-direction: column;
 }
     
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    
     
 }
 
