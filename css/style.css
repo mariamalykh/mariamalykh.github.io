@@ -143,12 +143,6 @@ html {
     text-transform: uppercase;
 }
 
-.about .row_1 {
-    display: flex;
-    align-items: flex-start; 
-    flex-direction: row;
-    padding-bottom: 2rem;
-}
 
 .about .row_1 .image {
     flex: 1 1 25rem; 
@@ -353,6 +347,7 @@ about .row_1 .content .container .box .span {
     align-items: flex-start; 
     flex-direction: column;
     padding-bottom: 2rem;
+    flex-wrap:wrap;
 }
     .about .row_1 .image {
     width: 100%;
@@ -364,13 +359,8 @@ about .row_1 .content .container .box .span {
     max-width: 100%;
 }
     
-    .about .row_1 {
-        
-    }
-    
     
 }
-
 
 
 
