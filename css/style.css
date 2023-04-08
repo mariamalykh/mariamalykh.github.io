@@ -3,18 +3,16 @@
 
 
 *{
-    font-family: Montserrat;
+    font-family: Montserrat, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5;
     text-decoration: none;
-    transition: all 0.2s linear;
 }
 
-html {    
+html {
     height: 100px;
-    font-size: 62.5;  
     overflow-x: hidden;
 }
 
@@ -22,7 +20,6 @@ html {
     position: relative;
     background: #FFFFFF;
     padding-left: 15%;
-    z-index: 1;
 }
 
 .section {
@@ -67,7 +64,7 @@ html {
 
 .header .navigation .a{
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #FFFFFF;
     margin: 2rem 0;
     letter-spacing: 0.2rem;
@@ -81,16 +78,15 @@ html {
 
 .home {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: row;
 }
 
 .image {
-    max-width: 40%;
 }
 
 .home .image .img {
-    width: 70%;
+    max-width: 40%;
 }
 
 .content {
@@ -136,7 +132,6 @@ html {
 }
 
 .about {
-    flex-direction: column;
 }
 
 .span {
@@ -144,17 +139,26 @@ html {
     text-transform: uppercase;
 }
 
+.about .row_1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 .about .row_1 .image {
 }
 
 .about .row_1 .image .img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
+    width: 70%;
+    max-width: 70%;
 }
 
 .about .row_1 .content {
+    width: 50%;
+    max-width: 50%;
+    float:left;
 }
 
 .about .row_1 .content .h3 {
@@ -172,13 +176,13 @@ html {
     display: flex;
     padding: 0.5rem 0;
     column-gap: 1rem;
-    
+
 }
 
-about .row_1 .content .container .box {
+.about .row_1 .content .container .box {
 }
 
-about .row_1 .content .container .box .span {
+.about .row_1 .content .container .box .span {
     color: blueviolet;
 }
 
@@ -188,6 +192,7 @@ about .row_1 .content .container .box .span {
 }
 
 .about .row_2 .skills {
+    width: 100%;
 }
 
 .about .row_2 .container {
@@ -285,7 +290,7 @@ about .row_1 .content .container .box .span {
     font-size: 1rem;
     padding: 1rem 0;
     margin: 1rem 0;
-    
+
 }
 
 .contact .row .form .box:focus, .contact .row .form .textarea:focus {
@@ -304,7 +309,7 @@ about .row_1 .content .container .box .span {
 .contact .row .form .button {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    
+
 }
 
 .footer {
@@ -327,64 +332,63 @@ about .row_1 .content .container .box .span {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    
+
     .image {
-    width: 100%;
-    max-width: 100%;}  
-    
+        width: 100%;
+        max-width: 100%;}
+
     .content {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .about .row_1 {
-    display: flex;
-    align-items: flex-start; 
-    flex-direction: column;
-    padding-bottom: 2rem;
-    flex-wrap:wrap;
-}
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        flex-wrap:wrap;
+    }
     .about .row_1 .image {
-    width: 100%;
-    max-width: 100%;
-}
-    
-    .about .row_1 .content {
-    width: 100%;
-    max-width: 100%;
-}
-    
-    .contact .icons_container .block {
-    flex: 1 1 25rem;
-    margin: 0.5rem;
-    text-align: center;
-    padding: 2rem;
-    background: #fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
-    border-radius: 0.5rem;
         width: 100%;
         max-width: 100%;
-}
-    
+    }
+
+    .about .row_1 .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact .icons_container .block {
+        flex: 1 1 25rem;
+        margin: 0.5rem;
+        text-align: center;
+        padding: 2rem;
+        background: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .contact .icons_container {
-    display: flex;
+        display: flex;
         flex-direction: column;
-}
-    
+    }
+
     .body {
         display: flex;
         flex-direction: column;
         width: 85%;
     }
-    
-   .contact .icons_container .block .p {
-    color: #666;
-    font-size: 0.5rem;
-    padding: 0.5rem 0;
-}
-    
-}
 
+    .contact .icons_container .block .p {
+        color: #666;
+        font-size: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+}
 
 
 
