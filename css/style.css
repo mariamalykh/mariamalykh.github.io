@@ -27,6 +27,10 @@ html {
     min-height: 100vh;
 }
 
+.span {
+    color: blueviolet;
+}
+
 .button {
     display: inline-block;
     margin-top: 1rem;
@@ -62,7 +66,7 @@ html {
     width: 15%;
 }
 
-.header .navigation .a{
+.header__link{
     display: block;
     font-size: 0.8rem;
     color: #FFFFFF;
@@ -70,55 +74,46 @@ html {
     letter-spacing: 0.2rem;
 }
 
-.header .navigation .a:hover{
+.header__link:hover{
     letter-spacing: 0.2rem;
     color: blueviolet;
 }
 
 
-.home {
+.section__home {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.image {
-}
-
-.home .image .img {
+.home__image {
     max-width: 40%;
 }
 
-.content {
+.home__content {
     max-width: 40%;
 }
 
 
-.home .content .hello {
+.home__content_greeting {
     font-size: 1rem;
     color: blueviolet;
     text-transform: uppercase;
 }
 
-.home .content .h3 {
+.home__content_heading {
     font-size: 2rem;
     color: #000000;
     text-transform: uppercase;
 }
 
-.home .content .h3 .span{
-    font-size: 2rem;
-    color: blueviolet;
-    text-transform: uppercase;
-}
-
-.home .content .job {
+.home__content_job {
     font-size: 1.5rem;
     color: #000000;
     padding: 0.5rem 0;
 }
 
-.home .content .text {
+.home__content_text {
     font-size: 1rem;
     color: #000000;
     padding: 0.5rem 0;
@@ -131,78 +126,70 @@ html {
     text-transform: uppercase;
 }
 
-.about {
-}
-
-.span {
-    color: blueviolet;
-    text-transform: uppercase;
-}
-
-.about .row_1 {
+.about__row_1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 
-.about .row_1 .image {
-}
-
-.about .row_1 .image .img {
+.about__row_1_image {
     object-fit: cover;
-    width: 70%;
-    max-width: 70%;
+    width: 30%;
+    max-width: 30%;
 }
 
-.about .row_1 .content {
-    width: 50%;
-    max-width: 50%;
-    float:left;
+.about__row_1_content {
+    width: 60%;
+    max-width: 60%;
+    margin-left: 5%;
 }
 
-.about .row_1 .content .h3 {
+.about__row_1_content_heading {
     color: #333;
     font-size: 2rem;
 }
 
-.about .row_1 .content .p {
+.about__row_1_content_paragraph {
     color: #666;
-    font-size: 0.8rem;
-    padding: 0.5rem 0;
+    font-size: 1rem;
+    padding: 2rem 0;
 }
 
-.about .row_1 .content .container {
+.about__row_1_container {
+    width: 100%;
     display: flex;
     padding: 0.5rem 0;
-    column-gap: 1rem;
-
+    column-gap: 2rem;
 }
 
-.about .row_1 .content .container .box {
+.about__row_1_container_column_item {
+    margin-bottom: 2rem;
 }
 
-.about .row_1 .content .container .box .span {
-    color: blueviolet;
+
+.about__row_1_container_column_item:last-child {
+    margin-bottom: 0;
 }
 
-.about .row_2 {
+.about__row_2 {
     display: flex;
     align-items: center;
 }
 
-.about .row_2 .skills {
+.about__row_2_skills {
     width: 100%;
 }
 
-.about .row_2 .container {
+.about__row_2 .container {
 }
 
-.about .row_2 .skills .progress {
+.about__row_2_skills_progress {
     padding: 1rem 0;
 }
 
-.about .row_2 .skills .progress .h3 {
+.about__row_2_skills_progress_heading {
     display: flex;
     justify-content: space-between;
     padding: 0.7rem 0;
@@ -211,44 +198,43 @@ html {
     font-weight: 400;
 }
 
-.about .row_2 .skills .progress .bar {
+.about__row_2_skills_progress_bar {
     width: 100%;
     overflow: hidden;
     height: 1rem;
     border-radius: 50rem;
 }
 
-.about .row_2 .skills .progress .bar .span {
+.about__row_2_skills_progress_bar .span {
     display: block;
     height: 100%;
     background-color: blueviolet;
 }
 
-.about .row_2 .skills .progress .bar1 {
+.about__row_2_skills_progress_bar1 {
     width: 100%;
 }
-
-.about .row_2 .skills .progress .bar2 {
+.about__row_2_skills_progress_bar2 {
     width: 80%;
 }
 
-.about .row_2 .skills .progress .bar3 {
+.about__row_2_skills_progress_bar3 {
     width: 60%;
 }
 
-.about .row_2 .skills .progress .bar4 {
+.about__row_2_skills_progress_bar4 {
     width: 90%;
 }
 
-.about .row_2 .skills .progress .bar5 {
+.about__row_2_skills_progress_bar5 {
     width: 90%;
 }
 
-.contact .icons_container {
+.contact__container {
     display: flex;
 }
 
-.contact .icons_container .block {
+.contact__container_block {
     flex: 1 1 25rem;
     margin: 0.5rem;
     text-align: center;
@@ -258,23 +244,25 @@ html {
     border-radius: 0.5rem;
 }
 
-.contact .icons_container .block .h3 {
+.contact__container_block_heading {
     color: #111;
     font-size: 1.5rem;
     padding: 0.5rem 0;
 }
 
-.contact .icons_container .block .p {
-    color: #666;
+.contact__container_block_link {
+    color: blueviolet;
     font-size: 1rem;
     padding: 0.5rem 0;
 }
 
-.contact .row {
+.contact-flex {
     display: flex;
 }
 
-.contact .row .form {
+.contact__form {
+    margin-left: auto;
+    margin-right: auto;
     background: #fff;
     padding: 0 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
@@ -282,7 +270,7 @@ html {
     margin-top: 1rem;
 }
 
-.contact .row .form .box, .contact .row .form .textarea {
+.contact__form_box, .contact__form_textarea {
     width: 100%;
     border-bottom: 0.1rem solid #333;
     color: #333;
@@ -293,20 +281,20 @@ html {
 
 }
 
-.contact .row .form .box:focus, .contact .row .form .textarea:focus {
+.contact__form_box:focus, .contact__form_textarea:focus {
     border-color: blueviolet;
 }
 
-.contact .row .form .box::placeholder, .contact .row .form .textarea::placeholder {
+.contact__form_box::placeholder, .contact__form_textarea::placeholder {
     text-transform: capitalize;
 }
 
-.contact .row .form .textarea {
+.contact__form_textarea {
     height: 10rem;
     resize: none;
 }
 
-.contact .row .form .button {
+.contact__form_button {
     margin-top: 0;
     margin-bottom: 1.5rem;
 
@@ -319,10 +307,6 @@ html {
     text-align: center;
     color: #666;
     background-color: #fff;
-}
-
-.footer .span {
-    color: blueviolet;
 }
 
 @media (max-width: 500px) {
@@ -342,24 +326,24 @@ html {
         max-width: 100%;
     }
 
-    .about .row_1 {
+    .about__row_1 {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         padding-bottom: 2rem;
         flex-wrap:wrap;
     }
-    .about .row_1 .image {
+    .about__row_1_img {
         width: 100%;
         max-width: 100%;
     }
 
-    .about .row_1 .content {
+    .about__row_1_content {
         width: 100%;
         max-width: 100%;
     }
 
-    .contact .icons_container .block {
+    .contact__container_block {
         flex: 1 1 25rem;
         margin: 0.5rem;
         text-align: center;
@@ -371,7 +355,7 @@ html {
         max-width: 100%;
     }
 
-    .contact .icons_container {
+    .contact__container {
         display: flex;
         flex-direction: column;
     }
@@ -382,9 +366,9 @@ html {
         width: 85%;
     }
 
-    .contact .icons_container .block .p {
-        color: #666;
-        font-size: 0.5rem;
+    .contact__container_block_link {
+        color: blueviolet;
+        font-size: 1.5rem;
         padding: 0.5rem 0;
     }
 
