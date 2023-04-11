@@ -24,7 +24,6 @@ html {
 
 .section {
     padding: 1rem 5%;
-    min-height: 100vh;
 }
 
 .span {
@@ -80,7 +79,7 @@ html {
 }
 
 
-.section__home {
+.home {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -95,35 +94,35 @@ html {
 }
 
 
-.home__content_greeting {
+.home__content-greeting {
     font-size: 1rem;
     color: blueviolet;
     text-transform: uppercase;
 }
 
-.home__content_heading {
+.home__content-heading {
     font-size: 2rem;
     color: #000000;
     text-transform: uppercase;
 }
 
-.home__content_heading_span {
+.home__content-heading-span {
     color: blueviolet;
 }
 
-.home__content_job {
+.home__content-job {
     font-size: 1.5rem;
     color: #000000;
     padding: 0.5rem 0;
 }
 
-.home__content_text {
+.home__content-text {
     font-size: 1rem;
     color: #000000;
     padding: 0.5rem 0;
 }
 
-.main_heading {
+.about__main-heading {
     font-size: 2rem;
     padding-bottom: 0.5rem;
     color: #111;
@@ -138,42 +137,42 @@ html {
 }
 
 
-.about__row_1_image {
+.about__row_1-image {
     object-fit: cover;
     width: 30%;
     max-width: 30%;
 }
 
-.about__row_1_content {
+.about__row_1-content {
     width: 60%;
     max-width: 60%;
     margin-left: 5%;
 }
 
-.about__row_1_content_heading {
+.about__row_1-content-heading {
     color: #333;
     font-size: 2rem;
 }
 
-.about__row_1_content_paragraph {
+.about__row_1-content-paragraph {
     color: #666;
     font-size: 1rem;
     padding: 2rem 0;
 }
 
-.about__row_1_container {
+.about__row_1-container {
     width: 100%;
     display: flex;
     padding: 0.5rem 0;
     column-gap: 2rem;
 }
 
-.about__row_1_container_column_item {
+.about__row_1-container-column-item {
     margin-bottom: 2rem;
 }
 
 
-.about__row_1_container_column_item:last-child {
+.about__row_1-container-column-item:last-child {
     margin-bottom: 0;
 }
 
@@ -182,18 +181,15 @@ html {
     align-items: center;
 }
 
-.about__row_2_skills {
+.about__row_2-skills {
     width: 100%;
 }
 
-.about__row_2 .container {
-}
-
-.about__row_2_skills_progress {
+.about__row_2-skills-progress {
     padding: 1rem 0;
 }
 
-.about__row_2_skills_progress_heading {
+.about__row_2-skills-progress-heading {
     display: flex;
     justify-content: space-between;
     padding: 0.7rem 0;
@@ -202,35 +198,35 @@ html {
     font-weight: 400;
 }
 
-.about__row_2_skills_progress_bar {
+.about__row_2-skills-progress-bar {
     width: 100%;
     overflow: hidden;
     height: 1rem;
     border-radius: 50rem;
 }
 
-.about__row_2_skills_progress_bar .span {
+.about__row_2-skills-progress-bar .span {
     display: block;
     height: 100%;
     background-color: blueviolet;
 }
 
-.about__row_2_skills_progress_bar1 {
+.about__row_2-skills-progress-bar1 {
     width: 100%;
 }
-.about__row_2_skills_progress_bar2 {
+.about__row_2-skills-progress-bar2 {
     width: 80%;
 }
 
-.about__row_2_skills_progress_bar3 {
+.about__row_2-skills-progress-bar3 {
     width: 60%;
 }
 
-.about__row_2_skills_progress_bar4 {
+.about__row_2-skills-progress-bar4 {
     width: 90%;
 }
 
-.about__row_2_skills_progress_bar5 {
+.about__row_2-skills-progress-bar5 {
     width: 90%;
 }
 
@@ -238,7 +234,7 @@ html {
     display: flex;
 }
 
-.contact__container_block {
+.contact__container-block {
     flex: 1 1 25rem;
     margin: 0.5rem;
     text-align: center;
@@ -248,13 +244,13 @@ html {
     border-radius: 0.5rem;
 }
 
-.contact__container_block_heading {
+.contact__container-block-heading {
     color: #111;
     font-size: 1.5rem;
     padding: 0.5rem 0;
 }
 
-.contact__container_block_link {
+.contact__container-block-link {
     color: blueviolet;
     font-size: 1rem;
     padding: 0.5rem 0;
@@ -274,7 +270,7 @@ html {
     margin-top: 1rem;
 }
 
-.contact__form_box, .contact__form_textarea {
+.contact__form-box, .contact__form-textarea {
     width: 100%;
     border-bottom: 0.1rem solid #333;
     color: #333;
@@ -285,20 +281,20 @@ html {
 
 }
 
-.contact__form_box:focus, .contact__form_textarea:focus {
+.contact__form-box:focus, .contact__form-textarea:focus {
     border-color: blueviolet;
 }
 
-.contact__form_box::placeholder, .contact__form_textarea::placeholder {
+.contact__form-box::placeholder, .contact__form-textarea::placeholder {
     text-transform: capitalize;
 }
 
-.contact__form_textarea {
+.contact__form-textarea {
     height: 10rem;
     resize: none;
 }
 
-.contact__form_button {
+.contact__form-button {
     margin-top: 0;
     margin-bottom: 1.5rem;
 
@@ -316,18 +312,44 @@ html {
 @media (max-width: 500px) {
     .section {
         padding: 1rem 5%;
-        min-height: 100vh;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
     .image {
         width: 100%;
-        max-width: 100%;}
+        max-width: 100%;
+        margin: auto;
+    }
 
     .content {
         width: 100%;
         max-width: 100%;
+    }
+
+    .home__content-greeting {
+        left: 5%;
+        width: 80%;
+    }
+
+    .home__content-heading {
+        left: 5%;
+        width: 80%;
+    }
+
+    .home__content-job {
+        left: 5%;
+        width: 80%;
+    }
+
+    .home__content-text {
+        left: 5%;
+        width: 80%;
+    }
+
+    .home__content-heading-span {
+        left: 5%;
+        width: 80%;
     }
 
     .about__row_1 {
@@ -337,26 +359,24 @@ html {
         padding-bottom: 2rem;
         flex-wrap:wrap;
     }
-    .about__row_1_img {
+    .about__row_1-image {
         width: 100%;
         max-width: 100%;
     }
 
-    .about__row_1_content {
+    .about__row_1-content {
         width: 100%;
         max-width: 100%;
     }
 
-    .contact__container_block {
-        flex: 1 1 25rem;
+    .contact__container-block {
         margin: 0.5rem;
         text-align: center;
         padding: 2rem;
         background: #fff;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
         border-radius: 0.5rem;
-        width: 100%;
-        max-width: 100%;
+        height: fit-content;
     }
 
     .contact__container {
@@ -370,7 +390,7 @@ html {
         width: 85%;
     }
 
-    .contact__container_block_link {
+    .contact__container-block-link {
         color: blueviolet;
         font-size: 1.5rem;
         padding: 0.5rem 0;
