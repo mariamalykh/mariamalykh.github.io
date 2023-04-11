@@ -129,7 +129,7 @@ html {
     text-transform: uppercase;
 }
 
-.about__row_1 {
+.about__row-1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -137,59 +137,59 @@ html {
 }
 
 
-.about__row_1-image {
+.about__row-1-image {
     object-fit: cover;
     width: 30%;
     max-width: 30%;
 }
 
-.about__row_1-content {
+.about__row-1-content {
     width: 60%;
     max-width: 60%;
     margin-left: 5%;
 }
 
-.about__row_1-content-heading {
+.about__row-1-content-heading {
     color: #333;
     font-size: 2rem;
 }
 
-.about__row_1-content-paragraph {
+.about__row-1-content-paragraph {
     color: #666;
     font-size: 1rem;
     padding: 2rem 0;
 }
 
-.about__row_1-container {
+.about__row-1-container {
     width: 100%;
     display: flex;
     padding: 0.5rem 0;
     column-gap: 2rem;
 }
 
-.about__row_1-container-column-item {
+.about__row-1-container-column-item {
     margin-bottom: 2rem;
 }
 
 
-.about__row_1-container-column-item:last-child {
+.about__row-1-container-column-item:last-child {
     margin-bottom: 0;
 }
 
-.about__row_2 {
+.about__row-2 {
     display: flex;
     align-items: center;
 }
 
-.about__row_2-skills {
+.about__row-2-skills {
     width: 100%;
 }
 
-.about__row_2-skills-progress {
+.about__row-2-skills-progress {
     padding: 1rem 0;
 }
 
-.about__row_2-skills-progress-heading {
+.about__row-2-skills-progress-heading {
     display: flex;
     justify-content: space-between;
     padding: 0.7rem 0;
@@ -198,35 +198,35 @@ html {
     font-weight: 400;
 }
 
-.about__row_2-skills-progress-bar {
+.about__row-2-skills-progress-bar {
     width: 100%;
     overflow: hidden;
     height: 1rem;
     border-radius: 50rem;
 }
 
-.about__row_2-skills-progress-bar .span {
+.about__row-2-skills-progress-bar .span {
     display: block;
     height: 100%;
     background-color: blueviolet;
 }
 
-.about__row_2-skills-progress-bar1 {
+.about__row-2-skills-progress-bar1 {
     width: 100%;
 }
-.about__row_2-skills-progress-bar2 {
+.about__row-2-skills-progress-bar2 {
     width: 80%;
 }
 
-.about__row_2-skills-progress-bar3 {
+.about__row-2-skills-progress-bar3 {
     width: 60%;
 }
 
-.about__row_2-skills-progress-bar4 {
+.about__row-2-skills-progress-bar4 {
     width: 90%;
 }
 
-.about__row_2-skills-progress-bar5 {
+.about__row-2-skills-progress-bar5 {
     width: 90%;
 }
 
@@ -352,19 +352,19 @@ html {
         width: 80%;
     }
 
-    .about__row_1 {
+    .about__row-1 {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         padding-bottom: 2rem;
         flex-wrap:wrap;
     }
-    .about__row_1-image {
+    .about__row-1-image {
         width: 100%;
         max-width: 100%;
     }
 
-    .about__row_1-content {
+    .about__row-1-content {
         width: 100%;
         max-width: 100%;
     }
