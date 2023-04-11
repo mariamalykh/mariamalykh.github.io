@@ -276,9 +276,10 @@ html {
     color: #333;
     text-transform: none;
     font-size: 1rem;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     margin: 1rem 0;
-
 }
 
 .contact__form-box:focus, .contact__form-textarea:focus {
