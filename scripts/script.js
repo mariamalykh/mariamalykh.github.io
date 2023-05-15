@@ -47,3 +47,70 @@ function ChangeTheme()
 
     link.setAttribute("href", current);
 }
+
+function validation(form) {
+
+    function removeError(input) {
+        const parent = input.parentNode;
+        if (parent.classList.contains("error")) {
+            parent.querySelector(".error-label").remove();
+            parent.classList.remove("error");
+
+        }
+    }
+    function makeError(input, text){
+        const parent = input.parentNode;
+        if (!parent.classList.contains("error")) {
+            const errorLabel = document.createElement('label');
+            errorLabel.classList.add("error-label");
+
+            errorLabel.textContent = text;
+            parent.classList.add("error");
+            parent.append(errorLabel);
+        }
+    }
+
+    // console.log(form);
+    let result = true;
+    form.querySelectorAll("input").forEach(input => {
+        removeError(input);
+
+        if (input.dataset.maxLength) {
+            removeError(input);
+            if (input.value.length > input.dataset.maxLength) {
+                console.log("Error!");
+                makeError(input,`Максимальное количество символов ${input.dataset.maxLength}`);
+                result = false;
+            }
+        }
+
+        if (input.dataset.minLength) {
+            if (input.value.length < input.dataset.minLength) {
+                console.log("Error!");
+                makeError(input,`Минимальное количество символов ${input.dataset.minLength}`);
+                result = false;
+            }
+        }
+
+        if (input.dataset.requiredLength) {
+            if (input.value.length !== input.dataset.reauiredLength) {
+                console.log("Error!");
+                makeError(input,`Требуемое количество символов ${input.dataset.requiredLength}`);
+                result = false;
+            }
+        }
+
+        if (input.value=="") {
+            console.log("Error!");
+            makeError(input,'Поле не заполнено');
+            result = false;
+        }
+    });
+    return result;
+}
+
+document.getElementById("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    validation(form);
+})
+

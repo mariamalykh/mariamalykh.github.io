@@ -125,12 +125,23 @@
     </div>
 
     <div class="contact-flex">
-        <form class="contact__form" novalidate>
-            <input required type="text" placeholder="name" class="contact__form-box" name="name">
-            <input required type="email" placeholder="email" class="contact__form-box" name="email">
-            <input required type="tel" placeholder="number" class="contact__form-box" name="phone">
-            <textarea required class="contact__form-textarea" name="message" placeholder="message me!" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" class="button contact__form_button" value="send message">
+        <form class="contact__form" id="form" novalidate>
+            <div class="input-box">
+                <input data-min-Length="2" required type="text" placeholder="name" class="contact__form-box" name="name" id="name">
+            </div>
+
+            <div class="input-box">
+                <input data-max-Length="25" required type="email" placeholder="email" class="contact__form-box" name="email" id="email">
+            </div>
+
+            <div class="input-box">
+                <input data-required-Length="10" required type="tel" placeholder="number" class="contact__form-box" name="phone" id="tel">
+            </div>
+
+            <div class="input-box">
+                <input required class="contact__form-textarea contact__form-box" name="message" placeholder="message me!" id="text">
+            </div>
+            <button type="submit" class="button contact__form_button">send message</button>
         </form>
     </div>
 </section>
