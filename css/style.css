@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 
+@keyframes rain {
+    from {
+        top: -50rem;
+    }
+    to {
+        top: 0;
+    }
+}
 
 *{
     font-family: Montserrat, serif;
@@ -308,6 +316,35 @@ html {
     text-align: center;
     color: #666;
     background-color: #fff;
+}
+
+.footer__rain_button {
+    text-transform: none;
+}
+
+.rain {
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    background-image: url(../images/rain.gif);
+    opacity: 0.5;
+}
+
+.rain_active {
+    display: block;
+}
+
+.rain_animation {
+    animation: rain 2s linear infinite;
+}
+@media (max-width: 800px) {
+    .rain_active {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {

@@ -1,0 +1,120 @@
+.body {
+    background: black;
+}
+
+.span {
+    color: DarkMagenta;
+}
+
+.heading {
+    color: white;
+}
+
+.button {
+    background-color: DarkMagenta;
+    color: white;
+}
+
+.button:hover {
+    background: violet;
+    color: white;
+}
+
+.header {
+    background-color: white;
+}
+
+.header__link{
+    color: black;
+}
+
+.header__link:hover{
+    color: DarkMagenta;
+}
+
+.home__content-greeting {
+    color: DarkMagenta;
+}
+
+.home__content-heading {
+    color: white;
+}
+
+.home__content-heading-span {
+    color: DarkMagenta;
+}
+
+.home__content-job {
+    color: white;
+}
+
+.home__content-text {
+    color: white;
+}
+
+.about__main-heading {
+    color: white;
+}
+
+
+.about__row-1-container-column-item {
+    color: white;
+}
+
+.about__row-1-content-heading {
+    color: darkgray;
+}
+
+.about__row-1-content-paragraph {
+    color: lightgray;
+}
+
+.about__row-2-skills-progress-heading {
+    color: white;
+}
+
+
+.about__row-2-skills-progress-bar .span {
+    background: DarkMagenta;
+}
+
+.contact__container-block {
+    background: black;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 1);
+}
+
+.contact__heading {
+    color: white;
+}
+
+.contact__container-block-heading {
+    color: white;
+}
+
+.contact__container-block-link {
+    color: DarkMagenta;
+}
+
+.contact__form {
+    background: black;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 1);
+}
+
+.contact__form-box, .contact__form-textarea {
+    border-bottom: 0.1rem solid lightgray;
+    color: lightgray;
+}
+
+.contact__form-box:focus, .contact__form-textarea:focus {
+    border-color: DarkMagenta;
+}
+
+.footer {
+    color: lightgray;
+    background-color: black;
+}
+
+
+
+
+

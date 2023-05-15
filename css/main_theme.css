@@ -1,0 +1,118 @@
+.body {
+    background: white;
+}
+
+.span {
+    color: blueviolet;
+}
+
+.heading {
+    color: black;
+}
+
+.button {
+    background-color: blueviolet;
+    color: white;
+}
+
+.button:hover {
+    background: black;
+}
+
+.header {
+    background-color: black;
+}
+
+.header__link{
+    color: white;
+}
+
+.header__link:hover{
+    color: blueviolet;
+}
+
+.home__content-greeting {
+    color: blueviolet;
+}
+
+.home__content-heading {
+    color: black;
+}
+
+.home__content-heading-span {
+    color: black;
+}
+
+.home__content-job {
+    color: black;
+}
+
+.home__content-text {
+    color: black;
+}
+
+.about__main-heading {
+    color: black;
+}
+
+.about__row-1-container-column-item {
+    color: black;
+}
+
+.about__row-1-content-heading {
+    color: lightgray;
+}
+
+.about__row-1-content-paragraph {
+    color: darkgray;
+}
+
+.about__row-2-skills-progress-heading {
+    color: black;
+}
+
+
+.about__row-2-skills-progress-bar .span {
+    background: blueviolet;
+}
+
+.contact__container-block {
+    background: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+.contact__heading {
+    color: black;
+}
+
+.contact__container-block-heading {
+    color: black;
+}
+
+.contact__container-block-link {
+    color: blueviolet;
+}
+
+.contact__form {
+    background: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+.contact__form-box, .contact__form-textarea {
+    border-bottom: 0.1rem solid darkgray;
+    color: darkgray;
+}
+
+.contact__form-box:focus, .contact__form-textarea:focus {
+    color: blueviolet;
+}
+
+.footer {
+    color: darkgray;
+    background-color: white;
+}
+
+
+
+
+

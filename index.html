@@ -18,6 +18,7 @@
     <!-- CSS
        ================================================== -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_theme.css" id="theme-link">
     <!-- font
              ================================================== -->
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
@@ -36,6 +37,7 @@
         <a class="header__link" href="#skills">my skills</a>
         <a class="header__link" href="#contact">contact me</a>
     </nav>
+    <button class="button theme-button" id="theme-button">magic!</button>
 </header>
 <!-- home
          ================================================== -->
@@ -95,7 +97,7 @@
             </div>
 
             <div class="about__row-2-skills-progress">
-                <h3 class="about__row-2_skills_progress_heading">database architect<span class="span"> 90%</span></h3>
+                <h3 class="about__row-2-skills-progress-heading">database architect<span class="span"> 90%</span></h3>
                 <div class="about__row-2-skills-progress-bar about__row-2-skills-progress-bar4"><span class="span"></span></div>
             </div>
 
@@ -123,7 +125,7 @@
     </div>
 
     <div class="contact-flex">
-        <form class="contact__form">
+        <form class="contact__form" novalidate>
             <input required type="text" placeholder="name" class="contact__form-box" name="name">
             <input required type="email" placeholder="email" class="contact__form-box" name="email">
             <input required type="tel" placeholder="number" class="contact__form-box" name="phone">
@@ -135,8 +137,12 @@
 
 <footer class="footer">
     created by <span class="span">Maria Malykh</span> in 2023
+    <div class="footer__buttons">
+    <button name="StartRaining" class="button footer__rain-button">Wake up, Neo!</button>
+    </div>
 </footer>
-
+<div class="rain animation"></div>
+<script src="scripts/script.js"></script>
 </body>
 </html>
 
