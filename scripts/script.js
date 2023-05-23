@@ -21,6 +21,40 @@ time_popup__close_button.addEventListener('click', (evt) => {
 
 setTimeout(showPopup, 3000);
 
+let btn = document.getElementById("theme-button");
+let link = document.getElementById("theme-link");
+
+btn.addEventListener("click", function () {
+    ChangeTheme();
+    localStorage.setItem('changed', 'true');
+});
+
+function ChangeTheme()
+{
+    if (localStorage.getItem('changed')) {
+        return;
+    }
+    let mainTheme = "css/main_theme.css";
+    let darkTheme = "css/dark_theme.css";
+
+    let current = link.getAttribute("href");
+    let theme = "";
+
+    if(current === darkTheme)
+    {
+        current = mainTheme;
+        theme = "dark";
+    }
+    else
+    {
+        current = darkTheme;
+        theme = "light";
+    }
+
+    link.setAttribute("href", current);
+}
+
+
 rain_button.addEventListener('click', function (event) {
     event.preventDefault();
     if (window.innerWidth >= 800) {
@@ -41,32 +75,6 @@ rain.addEventListener('click', function () {
     }
 })
 
-let btn = document.getElementById("theme-button");
-let link = document.getElementById("theme-link");
-
-btn.addEventListener("click", function () { ChangeTheme(); });
-
-function ChangeTheme()
-{
-    let mainTheme = "css/main_theme.css";
-    let darkTheme = "css/dark_theme.css";
-
-    let current = link.getAttribute("href");
-    let theme = "";
-
-    if(current === darkTheme)
-    {
-        current = mainTheme;
-        theme = "dark";
-    }
-    else
-    {
-        current = darkTheme;
-        theme = "light";
-    }
-
-    link.setAttribute("href", current);
-}
 
 function validation(form) {
 
@@ -145,15 +153,18 @@ const contactFormButton = document.querySelector(".contact__form_button");
 
 contactForm.addEventListener('submit',  (evt)  =>{
     evt.preventDefault();
-    contactFormButton.textContent = "Sending...";
-    document.body.style.cursor = 'wait';
-    const {name, email, tel, text} = evt.currentTarget.elements;
-    createPost({
-        name: name.value,
-        email: email.value,
-        phone: tel.value,
-        message: text.value
-    })
+    if (validation(form)) {
+        contactFormButton.textContent = "Sending...";
+        document.body.style.cursor = 'wait';
+        const {name, email, tel, text} = evt.currentTarget.elements;
+        createPost({
+            name: name.value,
+            email: email.value,
+            phone: tel.value,
+            message: text.value
+        })
+    }
+    contactFormButton.textContent = "Sent!";
 })
 
 const createPost =  (data) => {
