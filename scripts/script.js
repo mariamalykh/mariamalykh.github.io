@@ -134,6 +134,7 @@ function validation(form) {
     return result;
 }
 
+
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
     validation(form);
