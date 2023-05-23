@@ -259,6 +259,7 @@ function close(popup) {
         curr.classList.remove("current");
     }
     popup.classList.remove('popup_opened');
+    
 }
 
 
