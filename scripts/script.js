@@ -26,7 +26,6 @@ let link = document.getElementById("theme-link");
 
 btn.addEventListener("click", function () {
     ChangeTheme();
-    localStorage.setItem('changed', 'true');
 });
 
 function ChangeTheme()
@@ -34,6 +33,7 @@ function ChangeTheme()
     if (localStorage.getItem('changed')) {
         return;
     }
+    console.log("theme changed!");
     let mainTheme = "css/main_theme.css";
     let darkTheme = "css/dark_theme.css";
 
@@ -43,17 +43,34 @@ function ChangeTheme()
     if(current === darkTheme)
     {
         current = mainTheme;
-        theme = "dark";
+        localStorage.setItem("theme", "light");
     }
     else
     {
         current = darkTheme;
-        theme = "light";
+        localStorage.setItem("theme", "dark");
     }
 
     link.setAttribute("href", current);
 }
 
+function checkTheme () {
+    let mainTheme = "css/main_theme.css";
+    let darkTheme = "css/dark_theme.css";
+
+    let current = link.getAttribute("href");
+    let theme = "";
+
+    if (localStorage.getItem('theme') === "light") {
+        current = mainTheme;
+    }
+    if (localStorage.getItem('theme') === "dark") {
+        current = darkTheme;
+    }
+    link.setAttribute("href", current);
+}
+
+checkTheme();
 
 rain_button.addEventListener('click', function (event) {
     event.preventDefault();
@@ -251,6 +268,7 @@ function checkDirections(element) {
     else {
         popupLeftArrow.classList.remove("popup__files_arrow_disabled");
     }
+    
 }
 
 function close(popup) {
@@ -259,7 +277,6 @@ function close(popup) {
         curr.classList.remove("current");
     }
     popup.classList.remove('popup_opened');
-    
 }
 
 
